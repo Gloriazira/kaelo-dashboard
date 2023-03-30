@@ -1,0 +1,35 @@
+.asset-summary {
+    flex: 2;
+}
+
+.asset-summary h3 {
+    /* width: 366px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 60px;
+    background: rgba(98, 60, 231, 0.1);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 10px;
+
+    color: #333333;
+}
+
+
+.asset-summary .asset-summary-info li {
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.4);
+    letter-spacing: 1px;
+    margin: 15px auto;
+    white-space: nowrap;
+    /* text-align: justify;    */
+
+}
+
+.asset-summary-info li span {
+    color: #333333;
+    margin: 0 15px
+}

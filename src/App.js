@@ -1,25 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider
+} from "react-router-dom";
+
+
+//pages
+import Login from './onboarding/pages/Login'
+import IndividualSignUp from './onboarding/pages/signUpPages/IndividualSignUp'
+import BusinessSignUp from './onboarding/pages/signUpPages/BusinessSignUp'
+import SignupType from './onboarding/pages/SignupType'
+import ForgotPassword from "./onboarding/pages/ForgotPassword";
+import ResetPassword from "./onboarding/pages/ResetPassword";
+import VerifyEmail from "./onboarding/pages/VerifyEmail";
+import NotFound from './onboarding/pages/NotFound'
+//layouts
+import RootLayout from './layouts/RootLayout'
+
+//Dashboard
+import DashboardLayout from './dashboard/DashboardLayout';
+import Account from './dashboard/dashboardpages/account/Account';
+import Facility from './dashboard/dashboardpages/facility/Facility';
+import Expense from './dashboard/dashboardpages/expense/Expense';
+import Referral from './dashboard/dashboardpages/referral/Referral';
+import Team from './dashboard/dashboardpages/team/Team';
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Login />} />
+      <Route path="signup" element={<SignupType />} />
+      <Route path="/individualsignup" element={<IndividualSignUp />} />
+      <Route path="/businesssignup" element={<BusinessSignUp />} />
+      <Route path="resetpassword" element={<ResetPassword />} />
+      <Route path="forgotpassword" element={<ForgotPassword />} />
+      <Route path="verifyemail" element={<VerifyEmail />} />
+
+
+      <Route path="dashboard" element={<DashboardLayout />} >
+      <Route path="/dashboard" element={<Account />} />
+        <Route path="/dashboard/account" element={<Account />} />
+        <Route path="/dashboard/facility" element={<Facility />} />
+        <Route path="/dashboard/expense" element={<Expense />} />
+        <Route path="/dashboard/referral" element={<Referral />} />
+        <Route path="/dashboard/team" element={<Team />} />
+      </Route>
+
+      <Route path="*" element={<NotFound />} />
+    </Route>
+  )
+)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
 export default App;
+
+

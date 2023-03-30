@@ -1,0 +1,44 @@
+.expense-category {
+    flex: 4;
+    border-right: 1px solid #979797;
+ 
+}
+
+.expense-category .title {
+    width: 150px;
+    padding: 5px 0;
+    /* height: 50px; */
+    background: #F7F7F7;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #979797;
+}
+.bar p{
+font-weight: 700;
+font-size: 16px;
+margin: 5px 20px;
+color: rgba(51, 51, 51, 0.4);
+}
+
+.expense-category .indicator .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    margin: 0 10px;
+    background-color: #E0D4F3;
+}
+
+.dot.active {
+    background: #17E383 !important;
+}
+
+.indicator p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.4);
+}
+.apexcharts-bar-series.apexcharts-plot-series  .apexcharts-series path {
+    clip-path: inset(0% 0% -50% 0% round 15px);
+}

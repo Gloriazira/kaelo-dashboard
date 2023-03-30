@@ -1,0 +1,64 @@
+
+.dashboard-nav p{
+    font-weight: 500;
+font-size: 20px;
+color: #2C2C2C;
+
+}
+
+.dashboard-nav .form{
+    padding: 0 10px;
+    width: 340px;
+    border: none;
+    background: #F7F6F9;
+    border-radius: 8px;
+
+}
+.dashboard-nav input, .dashboard-nav .form input:hover, input:focus{
+    border: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+/* .dashboard-nav input::placeholder {
+    padding: 0 30px;
+} */
+
+.dashboard-nav .search-icon {
+    color: #A49F9F;
+}
+
+.top-icon {
+    position: relative;
+    width: auto;
+    height: max-content;
+}
+.top-icon .fa-bell{
+    /* width: ; */
+height: 25px;
+font-size: 40px;
+
+}
+.dashboard-nav .top-icon-badge {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.topAvatar {
+    width: 50px;
+    object-fit: cover;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}

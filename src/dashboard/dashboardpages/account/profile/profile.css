@@ -1,0 +1,34 @@
+.profile {
+    flex: 2;
+}
+
+.profile img{
+border-radius: 20px;
+}
+
+.profile-info{
+
+
+}
+.profile .profile-info li {
+    /* width: 263px; */
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.4);
+    letter-spacing: 1px;
+    margin: 15px auto; 
+    white-space: nowrap;
+    line-height: 30px !important;
+    
+    /* text-align: justify;    */
+    
+}
+
+
+.profile-info li span{
+    color: #333333;   
+    margin: 0 0 0 15px;
+    line-height: 30px !important;
+    
+}

@@ -1,0 +1,33 @@
+.ref-code {
+    flex: 2;
+
+}
+
+.ref-code img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.ref-code p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.ref-code p:nth-child(2) {
+    color: rgba(51, 51, 51, 0.4);
+}
+
+.ref-code .icon{
+    width: 30px;
+color: #623CE7;
+background-color: #fff;
+
+margin: 10px;
+}
+
+.ref-code hr{
+    width: 100%;
+    border: 1px solid #e2e2e2;
+transform: rotate(-180deg);
+}

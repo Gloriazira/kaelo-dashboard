@@ -1,0 +1,68 @@
+.expense-document {
+    flex: 2;
+}
+
+
+.document-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #84828A;
+    height: 40px;
+    /* margin: 5px 0; */
+    padding: 0 10px;
+
+}
+
+.document-list ul li:nth-child(odd) {
+    /* width: 366px; */
+    /* height: 49px; */
+    background: #FBFBFB;
+}
+
+
+.document-upload p {
+    width: 280px;
+    font-weight: 600;
+    font-size: 16px;
+
+    text-align: center;
+
+    color: rgba(51, 51, 51, 0.4);
+
+}
+.document-upload hr {
+    width: 400px;
+    margin: 30px auto !important;
+
+    border: 1px solid #a2a3a5;
+    /* transform: rotate(); */
+}
+.document-upload .btn {
+    width: 200px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #623CE7;
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 9px rgba(51, 51, 51, 0.1));
+
+}
+
+.document-upload .upload-icon {
+    width: 50px;
+    height: auto;
+    color: #623CE7;
+}
+
+.document-upload .btn p {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #623CE7;
+}
+
+
+

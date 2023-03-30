@@ -1,0 +1,51 @@
+.add-team {
+    flex: 2;
+
+}
+
+.add-team img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.add-team p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.add-team p:nth-child(2) {
+    color: rgba(51, 51, 51, 0.4);
+}
+
+.add-team .icon {
+    width: 30px;
+    color: #623CE7;
+    background-color: #fff;
+
+    margin: 10px;
+}
+
+.add-team hr {
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    transform: rotate(-180deg);
+}
+
+.add-team input {
+    height: 50px;
+    width: 200px;
+    border: 1px solid #BBC2D9;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.add-team .btn {
+    width: 200px;
+    padding: 15px 5px;
+    background: #FFFFFF;
+    border: 1px solid #623CE7;
+    border-radius: 8px;
+    color: #623CE7;
+    filter: drop-shadow(0px 4px 9px rgba(51, 51, 51, 0.1));
+}

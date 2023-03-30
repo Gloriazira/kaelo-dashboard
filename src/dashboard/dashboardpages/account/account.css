@@ -1,0 +1,47 @@
+.user-account {
+    flex: 4;
+}
+hr{
+    margin: 1em 0 0 0 !important;
+    border: 1px solid #ECEDF0;
+}
+.account-content {
+    width: 900px;
+    height: auto;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.account-content .top-nav p {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(51, 51, 51, 0.4);
+}
+
+.account-content .filter-box {
+    width: 150px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #ECEDF0;
+    border-radius: 40px;
+}
+select{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.32px;
+    color: #262626;
+}
+
+.filter-box select,
+.filter-box select:hover,
+.filter-box select:focus {
+    padding: 5px;
+    width: auto;
+    border: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}

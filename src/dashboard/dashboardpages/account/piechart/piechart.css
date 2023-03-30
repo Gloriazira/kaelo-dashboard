@@ -1,0 +1,35 @@
+.chart {
+    flex: 5;
+    border-right: 1px solid #979797;
+ 
+}
+
+.pie-chart-status .title {
+    width: 150px;
+    padding: 5px 0;
+    /* height: 50px; */
+    background: #F7F7F7;
+    border-radius: 60px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #979797;
+}
+
+.pie-chart-status .indicator .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    margin: 0 10px;
+    background-color: #E0D4F3;
+}
+
+.dot.active {
+    background: #17E383 !important;
+}
+
+.indicator p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.4);
+}
