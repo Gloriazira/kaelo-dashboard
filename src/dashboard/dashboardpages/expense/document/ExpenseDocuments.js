@@ -24,7 +24,22 @@ export default function ExpenseDocuments() {
             <div className="d-flex flex-column align-items-center document-upload px-2 ">
                 <hr />
                 <p>Upload documents to support your expenses. </p>
-                <button className='d-flex align-items-center btn my-5'><Icon icon="material-symbols:upload-rounded" className='upload-icon' /><p>Upload Receipt</p></button>
+                <div className='upload-btn  d-flex align-items-center my-5'>
+                    <input
+                        type="file"
+                        // accept="image/*"
+                        style={{ display: 'none' }}
+                        id="contained-button-file"
+                    />
+                    <label htmlFor="contained-button-file" className='d-flex align-items-center'>
+                        {/* <button '> */}
+                            <Icon icon="material-symbols:upload-rounded" className='upload-icon' />
+                            <p>Upload Receipt</p>
+                        {/* </button> */}
+                    </label>
+
+                </div>
+
             </div>
         </div>
     )

@@ -1,0 +1,58 @@
+.edit-profile h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: normal;
+    color: #1F1F1F;
+}
+
+img {
+    width: 250px;
+    /* height: 200px; */
+    border-radius: 20px;
+}
+
+.edit-profile input, .edit-profile select{
+    background: #FFFFFF;
+/* Mono/Gray 2 */
+
+border: 1px solid #BBC2D9;
+border-radius: 8px;
+height: 56px;
+width: 350px;
+border-radius: 8px;
+}
+
+.icon {
+    position: absolute;
+    top: 260px;
+    left: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px !important;
+    height: 55px !important;
+    background: #ffffff !important;
+    border-radius: 50px;
+}
+
+.edit-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.edit-btn {
+    padding: 15px 60px;
+    width: 350px;
+    background: #623CE7;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.edit-btn:hover {
+    background: #FFFFFF;
+    color: #623CE7;
+    border: 2px solid #623CE7;
+}

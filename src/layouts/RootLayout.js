@@ -19,7 +19,7 @@ export default function RootLayout() {
                 <Outlet />
             </main>
 
-            {location.pathname !== '/dashboard' && location.pathname !== '/dashboard/account' && location.pathname !== '/dashboard/facility' && location.pathname !== '/dashboard/expense' && location.pathname !== '/dashboard/referral' && location.pathname !== '/dashboard/team' && <Footer />}
+            {location.pathname !== '/dashboard' && location.pathname !== '/dashboard/account' && location.pathname !== '/dashboard/facility' && location.pathname !== '/dashboard/expense' && location.pathname !== '/dashboard/referral' && location.pathname !== '/dashboard/team' && location.pathname !== '/dashboard' && location.pathname !== '/dashboard/account' && location.pathname !== '/dashboard/facility' && location.pathname !== '/dashboard/expense' && location.pathname !== '/dashboard/referral' && location.pathname !== '/dashboard/settings' && location.pathname !== '/dashboard/applyloan' && <Footer />}
         </div>
     )
 }

@@ -31,5 +31,26 @@
 
 .asset-summary-info li span {
     color: #333333;
+    font-weight: 500;
     margin: 0 15px
+}
+
+.asset-summary ul:nth-child(even) li:nth-child(5) span,
+.asset-summary ul:nth-child(odd) li:nth-child(5) span {
+    font-weight: bolder;
+}
+
+.asset-summary-info li .btn {
+    padding: 2px 22px;
+    width: 60px;
+    height: 25px;
+    background: rgba(217, 217, 217, 0.3);
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    color: #262626;
+}
+hr{
+    border: 2px solid #a2a3a5
 }

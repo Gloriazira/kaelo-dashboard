@@ -79,7 +79,7 @@ export default function Login() {
 
                         </div>
 
-                        <div className="d-flex align-items-center">
+                        <div className="d-flex align-items-center justify-content-center pass-input">
                             <input
                                 value={password}
                                 // onClick={togglePassword}
@@ -89,7 +89,7 @@ export default function Login() {
                                 name="password"
                                 required
                             ></input>
-                            <div onClick={togglePasswordVisiblity} className="mx-3 eye">
+                            <div onClick={togglePasswordVisiblity} className="eye">
                                 <FontAwesomeIcon icon={icon ? faEyeSlash : faEye} className='' />
 
                             </div>

@@ -5,16 +5,11 @@ import {faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function ForgotPassword() {
 
-    let subtitle;
+    // let subtitle;
     const [modalIsOpen, setIsOpen] = React.useState(false);
 
     function openModal() {
         setIsOpen(true);
-    }
-
-    function afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        subtitle.style.color = '#f00';
     }
 
     function closeModal() {
@@ -63,7 +58,7 @@ export default function ForgotPassword() {
             </div>     
             <Modal
                 isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
+                // onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
                 contentLabel="Example Modal"
                 className={{
@@ -88,11 +83,6 @@ export default function ForgotPassword() {
                 <p>A password reset link have been sent to your </p>
                 <p style={{fontWeight: "700"}}>janedeo@gmail.com</p>
                 </div>
-
-                
-     
-                
-
             </Modal>       
         </div>
     )

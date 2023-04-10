@@ -25,21 +25,34 @@
     color: inherit;
 }
 
-.sidebar-link {
+.link {
     width: 220px;
     height: 40px;
     padding: 5px 15px;
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
+    white-space: nowrap;
     margin: 3px auto;
     color: #84828A;
+    font-size: 14px;
+    
+}
+.sidebar-link{
+    width: 220px;
+    color: #623CE7;
+    display: flex;
+    font-size: 14px;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0 15px;
+    height: 45px;
     white-space: nowrap;
 }
-
-.sidebar-link.active,
-.sidebar-link:hover {
+.sidebar-link, .sidebar-link:hover,
+.link:hover {
+    
     color: #623CE7;
     background: rgba(101, 42, 196, 0.05);
     border-radius: 20px;

@@ -20,11 +20,15 @@ import RootLayout from './layouts/RootLayout'
 
 //Dashboard
 import DashboardLayout from './dashboard/DashboardLayout';
+// import IndividualLoanForm from "./dashboard/dashboardpages/loanform/IndividualLoanForm";
+import BusinessLoanForm from "./dashboard/dashboardpages/loanform/BusinessLoanForm";
 import Account from './dashboard/dashboardpages/account/Account';
 import Facility from './dashboard/dashboardpages/facility/Facility';
 import Expense from './dashboard/dashboardpages/expense/Expense';
 import Referral from './dashboard/dashboardpages/referral/Referral';
 import Team from './dashboard/dashboardpages/team/Team';
+import Settings from './dashboard/dashboardpages/settings/Settings';
+
 
 
 const router = createBrowserRouter(
@@ -40,12 +44,15 @@ const router = createBrowserRouter(
 
 
       <Route path="dashboard" element={<DashboardLayout />} >
-      <Route path="/dashboard" element={<Account />} />
+        {/* <Route path="/dashboard/applyloan" element={<IndividualLoanForm />} /> */}
+        <Route path="/dashboard/applyloan" element={<BusinessLoanForm />} />
+        <Route path="/dashboard" element={<Account />} />
         <Route path="/dashboard/account" element={<Account />} />
         <Route path="/dashboard/facility" element={<Facility />} />
         <Route path="/dashboard/expense" element={<Expense />} />
         <Route path="/dashboard/referral" element={<Referral />} />
         <Route path="/dashboard/team" element={<Team />} />
+        <Route path="/dashboard/settings" element={<Settings />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

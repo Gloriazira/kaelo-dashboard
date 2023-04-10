@@ -34,6 +34,9 @@
     color: rgba(51, 51, 51, 0.4);
 
 }
+.document-list img{
+    width: auto;
+}
 .document-upload hr {
     width: 400px;
     margin: 30px auto !important;
@@ -41,7 +44,7 @@
     border: 1px solid #a2a3a5;
     /* transform: rotate(); */
 }
-.document-upload .btn {
+.document-upload .upload-btn {
     width: 200px;
     height: 50px;
     background: #FFFFFF;
@@ -57,12 +60,9 @@
     color: #623CE7;
 }
 
-.document-upload .btn p {
+.document-upload .upload-btn p {
     font-weight: 500;
     font-size: 16px;
     text-align: center;
     color: #623CE7;
 }
-
-
-

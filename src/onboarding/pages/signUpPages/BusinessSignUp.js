@@ -84,7 +84,7 @@ export default function BusinessSignUp() {
                                     required
                                 />
                             </div>
-                            <div className="form-group">
+                            <div className="form-group ">
                                 <label style={{ color: "#2C2E33" }}>City</label>
                                 <select name="" id="">
                                     <option value="">select country...</option>
@@ -145,7 +145,7 @@ export default function BusinessSignUp() {
                                 <label style={{ color: "#2C2E33" }}>Password</label>
 
 
-                                <div className="d-flex align-items-center">
+                                <div className="d-flex align-items-center pass-input">
                                     <input
                                         value={password}
                                         // onClick={togglePassword}
@@ -155,7 +155,7 @@ export default function BusinessSignUp() {
                                         name="password"
                                         required
                                     ></input>
-                                    <div onClick={togglePasswordVisiblity} className="mx-3 eye">
+                                    <div onClick={togglePasswordVisiblity} className="eye">
                                         <FontAwesomeIcon icon={icon ? faEyeSlash : faEye} className='' />
 
                                     </div>

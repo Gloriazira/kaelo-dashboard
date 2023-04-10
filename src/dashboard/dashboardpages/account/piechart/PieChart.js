@@ -4,11 +4,23 @@ import Chart from "react-apexcharts";
 
 export default function PieChart() {
     const options = {
-        series: [234345, 32345],
+        // series: [234345, 32345],
         labels: ["Paid", "Unpaid"],
         colors: ["#17E383", "#E0D4F3"],
         dataLabels: {
             enabled: false
+        },
+        states: {
+            hover: {
+                filter: {
+                    type: 'none',
+                }
+            },
+            active: {
+                filter: {
+                    type: 'none',
+                }
+            },
         },
         legend: {
             show: false

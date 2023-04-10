@@ -14,10 +14,10 @@ export default function ResetPassword() {
         setIsOpen(true);
     }
 
-    function afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        subtitle.style.color = '#f00';
-    }
+    // function afterOpenModal() {
+    //     // references are now sync'd and can be accessed.
+    //     subtitle.style.color = '#f00';
+    // }
 
     function closeModal() {
         setIsOpen(false);
@@ -62,7 +62,7 @@ export default function ResetPassword() {
 
                         <label style={{ color: "#2C2E33" }}> New Password</label>
 
-                        <div className="d-flex align-items-center">
+                        <div className="d-flex align-items-center pass-input">
                             <input
                                 value={password}
                                 // onClick={togglePassword}
@@ -84,7 +84,7 @@ export default function ResetPassword() {
 
                         <label style={{ color: "#2C2E33" }}>Confirm New Password</label>
 
-                        <div className="d-flex align-items-center">
+                        <div className="d-flex align-items-center pass-input">
                             <input
                                 value={confirmPassword}
                                 // onClick={togglePassword}
@@ -106,7 +106,7 @@ export default function ResetPassword() {
             </div>
             <Modal
                 isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
+                // onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
                 contentLabel="Example Modal"
                 className={{

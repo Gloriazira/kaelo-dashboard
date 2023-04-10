@@ -22,13 +22,6 @@ function DashboardLayout() {
         <div>
           <Outlet />
         </div>
-        {/* <Account /> */}
-        {/* <Facility /> */}
-        {/* <Expense /> */}
-        {/* <Referral /> */}
-        {/* <Team /> */}
-        
-
       </div>
 
 

@@ -35,6 +35,6 @@
     font-size: 14px;
     color: rgba(51, 51, 51, 0.4);
 }
-/* .apexcharts-bar-series.apexcharts-plot-series  .apexcharts-series path {
-    clip-path: inset(0% 0% -50% 0% round 15px);
-} */
+.apexcharts-bar-series.apexcharts-plot-series  .apexcharts-series path {
+    clip-path: inset(0% 0% 0% 0% round 0px) !important;
+}

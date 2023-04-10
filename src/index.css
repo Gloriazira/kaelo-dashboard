@@ -101,8 +101,16 @@ nav .btn:hover {
 .form-group {
   margin: 1em 0;
 }
-
-input, select {
+.pass-input {
+  padding: 0.8em 0 !important;
+}
+.pass-input input{
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0 20px;
+}
+input, select, .pass-input {
   display: block;
   width: 400px;
   margin: 5px 0;
@@ -139,15 +147,14 @@ input:hover {
 }
 
 .eye {
-  position: absolute;
-  right: 450px;
+ padding-right: 20px;
   color: rgba(51, 51, 51, 0.4);
-  ;
+  
 }
 
-.business-signup .eye{
+/* .business-signup .eye{
   right: 230px;
-}
+} */
 
 .form .btn,
 .business-signup .btn, .verify-email .btn, .modal-base .btn {

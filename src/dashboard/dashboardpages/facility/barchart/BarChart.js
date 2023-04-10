@@ -4,102 +4,106 @@ import Chart from "react-apexcharts";
 
 export default function BarChart() {
 
+    const options = {
+
+        dataLabels: {
+            enabled: false
+        },
+        chart: {
+            stacked: true,
+            toolbar: {
+                show: false,
+            },
+            animations: {
+                enabled: false
+            },
+
+        },
+        states: {
+            hover: {
+                filter: {
+                    type: 'none',
+                }
+            },
+            active: {
+                filter: {
+                    type: 'none',
+                }
+            },
+        },
+        plotOptions: {
+            bar: {
+                horizontal: false,
+                columnWidth: '25%',
+                borderRadiusApplication: 'end', //aorund
+                borderRadiusWhenStacked: 'last', //all
+                borderRadius: 10
+            }
+        },
+        stroke: {
+            show: false,
+            curve: 'smooth',
+        },
+        xaxis: {
+
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+
+            crosshairs: {
+                show: false,
+            }
+        },
+        yaxis: {
+            categories: [],
+            min: 0,
+            max: 800,
+
+        },
+        legend: {
+            position: 'bottom',
+            show: false
+        },
+        grid: {
+            show: true,
+            xaxis: {
+                lines: {
+                    show: false
+                }
+            },
+            yaxis: {
+                lines: {
+                    show: true
+                }
+            }
+
+        }
+
+    }
+
+    const series = [
+        {
+            name: "Paid",
+            data: [445, 600, 300, 0, 0, 0],
+            color: '#17E383'
+        },
+        {
+            name: "Unpaid",
+            data: [355, 200, 500, 800, 650, 550],
+            color: '#E0D4F3'
+        }
+    ]
+
 
     return (
         <div className="chart mx-2">
             <Chart
-                className="bar"
                 type="bar"
                 width={600}
                 // height={}
-                series={[
-                    {
-                        name: "Paid",
-                        data: [445, 600, 300, 0, 0, 0],
-                        color: '#17E383'
-                    },
-                    {
-                        name: "Unpaid",
-                        data: [355, 200, 500, 800, 650, 550],
-                        color: '#E0D4F3'
-                    }
-                ]}
+                options={options}
+                series={series}
 
-                options={{
-                    dataLabels: {
-                        enabled: false
-                    },
-                    chart: {
-                        stacked: true,
-                        toolbar: {
-                            show: false,
-                        },
-                        animations: {
-                            enabled: false
-                        },
 
-                    },
-                    states: {
-                        hover: {
-                            filter: {
-                                type: 'none',
-                            }
-                        },
-                        active: {
-                            filter: {
-                                type: 'none',
-                            }
-                        },
-                    },
-                    plotOptions: {
-                        bar: {
-                            horizontal: false,
-                            columnWidth: '25%',
-                            borderRadius: 10
-                        }
-                    },
-                    stroke: {
-                        show: false,
-                        curve: 'smooth',
-                    },
-                    xaxis: {
 
-                        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-
-                        crosshairs: {
-                            show: false,
-                        }
-                    },
-                    yaxis: {
-                        categories: [],
-                        min: 0,
-                        max: 800,
-
-                    },
-                    legend: {
-                        position: 'bottom',
-                        show: false
-                    },
-                    dataLabels: {
-                        enabled: false,
-                    },
-
-                    grid: {
-                        show: true,
-                        xaxis: {
-                            lines: {
-                                show: false
-                            }
-                        },
-                        yaxis: {
-                            lines: {
-                                show: true
-                            }
-                        }
-
-                    }
-
-                }}
             />
 
 

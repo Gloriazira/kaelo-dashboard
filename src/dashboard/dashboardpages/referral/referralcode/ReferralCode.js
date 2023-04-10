@@ -14,8 +14,8 @@ export default function ReferralCode() {
                 <div className="d-flex align-items-center justify-content-around ">
                     <p>Referral Code: {<br />} <span style={{fontWeight: "600"}}>1938464GHR</span> </p>
                  
-                    <Icon icon="ph:share-network-bold" className='icon'/>
-                    <Icon icon="lucide:copy" className='icon'/>
+                    <Icon icon="ph:share-network-bold" className='ref-icon'/>
+                    <Icon icon="lucide:copy" className='ref-icon'/>
                 </div>
                 <hr />
             </div>

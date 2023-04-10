@@ -105,7 +105,7 @@ export default function IndividualSignUp() {
                             <label style={{ color: "#2C2E33" }}>Password</label>
 
 
-                            <div className="d-flex align-items-center">
+                            <div className="d-flex align-items-center pass-input">
                                 <input
                                     value={password}
                                     // onClick={togglePassword}
@@ -115,7 +115,7 @@ export default function IndividualSignUp() {
                                     name="password"
                                     required
                                 ></input>
-                                <div onClick={togglePasswordVisiblity} className="mx-3 eye">
+                                <div onClick={togglePasswordVisiblity} className="eye">
                                     <FontAwesomeIcon icon={icon ? faEyeSlash : faEye} className='' />
 
                                 </div>

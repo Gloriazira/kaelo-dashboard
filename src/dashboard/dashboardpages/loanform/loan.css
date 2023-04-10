@@ -1,0 +1,214 @@
+.loan-page {
+    flex: 4;
+}
+
+.loan-form {
+    width: 900px;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #84828A;
+}
+
+.loan-form label {
+    font-weight: 500;
+    font-size: 15px;
+
+    color: #2C2E33;
+}
+
+.loan-form input {
+    height: 50px;
+    width: 350px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid #BBC2D9;
+    border-radius: 8px;
+}
+
+.loan-form select {
+    height: 50px;
+    width: 350px;
+    border-radius: 8px;
+    padding: 0 1em;
+    background: #FFFFFF;
+    border: 1px solid #BBC2D9;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #BBC2D9;
+}
+
+.loan-form select option:first-child {
+    font-size: 18px;
+    color: #BBC2D9;
+}
+
+.loan-form input::placeholder,
+textarea::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    color: #BBC2D9 !important;
+}
+
+.loan-form .loan-type p:first-child,
+.employment-info p,
+.consent p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+}
+
+.employment-info hr,
+.consent hr,
+.business-reg hr,
+.acct-statement hr,
+.loan-detail hr,
+.finance-info hr {
+    margin: 0.3em 0 !important;
+}
+
+.check-box input {
+    height: 35px;
+    width: 35px;
+    background: #FFFFFF;
+    border: 1px solid #BBC2D9;
+    border-radius: 10px !important;
+    margin: 0;
+}
+
+.check-box p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #2C2E33;
+    margin: 0 10px;
+}
+
+.employment-info textarea {
+    height: 130px;
+    width: 750px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid #BBC2D9;
+    border-radius: 8px;
+}
+
+form .add-btn {
+    padding: 10px 0;
+    width: 130px;
+    color: #623CE7;
+    background: #FFFFFF;
+    border: 2px solid #623CE7;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+
+}
+
+form .add-btn:hover {
+    color: #FFFFFF;
+    background: #623CE7;
+
+}
+
+.consent-agreement p {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: justify;
+
+    color: #202020;
+}
+
+.submit-btn {
+    padding: 15px 0;
+    width: 300px;
+    background: #623CE7;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.submit-btn:hover {
+    background: #FFFFFF;
+    border: 2px solid #623CE7;
+    color: #623CE7;
+
+}
+
+.business-reg p,
+.acct-statement p,
+.loan-detail p,
+.finance-info p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #84828A;
+}
+
+.business-reg img {
+    width: 80px;
+}
+
+.upload-btn {
+    width: 200px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #623CE7;
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 9px rgba(51, 51, 51, 0.1));
+
+}
+
+.upload-icon {
+    width: 50px;
+    height: 30px;
+    color: #623CE7;
+}
+
+.upload-btn p {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #623CE7;
+}
+
+.close-btn {
+    width: 80px;
+}
+
+.close-btn .close {
+    width: 30px;
+    height: 30px;
+}
+
+.loan-detail .check-box p,
+.finance-info-check p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #262626;
+}
+
+.last {
+    font-weight: 400;
+    font-size: 14px;
+    color: #84828A;
+}
+
+.finance-info-check .agree-text {
+    font-weight: 700;
+    font-size: 14px;
+    color: #84828A;
+}

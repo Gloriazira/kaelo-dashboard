@@ -114,6 +114,9 @@ export default function ExpenseCategory() {
                             bar: {
                                 horizontal: false,
                                 columnWidth: '25%',
+                                borderRadiusApplication: 'end', //aorund
+                // borderRadiusWhenStacked: 'last', //all
+                                borderRadius: 15
                             }
                         },
                         stroke: {
